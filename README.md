@@ -31,4 +31,4 @@ sudo systemctl start timelapses-server.service
 ```
 
 5. Test the service on power-up check
-[Resources with python http.server](http://ip_server:8000) | [Client web](http://ip_server:5000)
+[Resources with python http.server](http://ip-server:8000) | [Client web](http://ip-server:5000)
