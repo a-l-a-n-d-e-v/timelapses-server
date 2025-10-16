@@ -1,5 +1,5 @@
 # Hardware
-- Orangepi3LTS (arm-64bits)| [Specs](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/orange-pi-3-LTS.html) | [Manual](https://drive.google.com/file/d/1jka7avWnzNeTIQFkk78LoJdygWaGH2iu/view)
+- Orangepi3LTS (arm-64bits) | [Specs](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/orange-pi-3-LTS.html) | [Manual](https://drive.google.com/file/d/1jka7avWnzNeTIQFkk78LoJdygWaGH2iu/view)
 - OS: Debian GNU/Linux 11 (bullseye) aarch64 (image recommended by manufacturer)
 
 # Tecnologies
