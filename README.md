@@ -1,12 +1,12 @@
-## Tecnologies
+# Tecnologies
 - Web (HTTP, python, Flask) - Client - web_server.py
 - Timelaps (python, ffmpe) - Devices - timelapse_core.py
 - HTTP server python - Resources - [Timelapses saved](./resources)
 
-# Initialize app (linux) on root of the project
+## Initialize app (linux) on root of the project
 ```python3 -m venv web && pip install -r requierements.txt```
 
-# Start app
+## Start app
 [example to initialize](./automation/timelapse_start.sh) - nohup
 
 ## Timelapses-sevice started when power-up (optional)
