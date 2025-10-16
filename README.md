@@ -1,6 +1,6 @@
 # Tecnologies
 - Web (HTTP, python, Flask) - Client - web_server.py
-- Timelaps (python, ffmpe) - Devices - timelapse_core.py
+- Timelapses (python, ffmpeg) - Devices - timelapse_core.py
 - HTTP server python - Resources - [Timelapses saved](./resources)
 
 ## Initialize app (linux) on root of the project
