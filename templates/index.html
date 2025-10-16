@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Timelapse</title>
+    <style>
+        body { font-family: sans-serif; background: #f7f7f7; margin: 2rem; }
+        form { background: white; padding: 1.5rem; border-radius: 8px; max-width: 400px; }
+        input, select { width: 100%; margin-bottom: 1rem; padding: 0.5rem; }
+        button { padding: 0.7rem; width: 100%; background: #007bff; color: white; border: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h2>🎥 Control de Timelapse</h2>
+    <form id="timelapseForm">
+        <label>Cámara:</label>
+        <select name="camara">
+            {% for c in camaras %}
+                <option value="{{c}}">Cámara {{c}}</option>
+            {% endfor %}
+        </select>
+
+        <label>Duración (segundos):</label>
+        <input type="number" name="duracion" value="30" required>
+
+        <label>Intervalo (segundos):</label>
+        <input type="number" step="0.1" name="intervalo" value="2" required>
+
+        <label>FPS del video final:</label>
+        <input type="number" name="fps" value="30" required>
+
+        <label>Path name</label>
+        <input type="text" name="path" value="impresion_x">
+
+        <label>Nombre del archivo de salida:</label>
+        <input type="text" name="salida" value="timelapse.mp4">
+
+        <button type="submit">Iniciar Timelapse</button>
+    </form>
+
+    <p id="status"></p>
+
+    <script>
+        const form = document.getElementById('timelapseForm');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            document.getElementById('status').innerText = "Iniciando timelapse...";
+            const formData = new FormData(form);
+            const res = await fetch('/start', { method: 'POST', body: formData });
+            const data = await res.json();
+            document.getElementById('status').innerText = data.msg;
+        });
+    </script>
+</body>
+</html>
