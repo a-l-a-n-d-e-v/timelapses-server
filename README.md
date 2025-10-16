@@ -4,10 +4,10 @@
 - HTTP server python - Resources - [Timelapses saved](./resources)
 
 # Initialize app (linux) on root of the project
-python3 -m venv web && pip install -r requierements.txt
+`python3 -m venv web && pip install -r requierements.txt`
 
 # Start app
-[template-script to initialize](./automation/timelapse_service.sh) - nohup
+[example to initialize](./automation/timelapse_start.sh) - nohup
 
 ## Timelapses-sevice started when power-up (optional)
 1. Change your path info on the templates of the scripts of the service
