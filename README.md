@@ -20,7 +20,7 @@
 
 [template-service settings](./automation/timelapses-server.service)
 
-sudo nano /etc/systemd/system/timelapses-server.service
+```sudo nano /etc/systemd/system/timelapses-server.service```
 
 3. Execute the next instructions
 
