@@ -1,0 +1,14 @@
+[Unit]
+Description=Timelapses Web y Server HTTP
+After=network.target
+
+[Service]
+Type=forking
+User=<user_name>
+WorkingDirectory=/home/<user_name>/timelapses-server
+ExecStart=/home/<user_name>/timelapses-server/automation/timelapse_service.sh
+ExecStop=/home/<user_name>/timelapses-server/automation/timelapse_stop.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
